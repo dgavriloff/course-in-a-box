@@ -17,4 +17,11 @@ If you tell us your username, we can prepare some links and make things a bit ea
 
 This guide is a cohesive companion for building a course directly in GitHub’s web interface with minimal coding knowledge. While this is the simplest way to get started, please note that you will generally have to wait a few minutes before changes will appear on your live course website. 
 
-Optionally, if you’re comfortable setting up and working in local dev environments, you can [install and run Jekyll](https://nicolas-van.github.io/bootstrap-4-github-pages#run-jekyll-on-your-computer-to-speed-up-testing) to build your course locally and speed up testing.
+Optionally, if you’re comfortable setting up and working in local dev environments, you can run your course locally to speed up testing. The easiest way is to use Docker Compose:
+
+1. [Install Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
+2. Clone your repository to your local machine
+3. Run `docker compose up` in the repository directory
+4. View your site at [http://localhost:4000](http://localhost:4000)
+
+Alternatively, you can [install and run Jekyll directly](https://nicolas-van.github.io/bootstrap-4-github-pages#run-jekyll-on-your-computer-to-speed-up-testing) if you prefer not to use Docker.

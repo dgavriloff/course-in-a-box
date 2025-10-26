@@ -28,6 +28,7 @@ Once you’ve forked the course, you’ll see the course's guts as a list of fol
 .gitignore - a git file (for keeping this directory tidy)
 404.html - error text that appears on broken links or nonexistent pages
 CNAME - use for setting custom domains
+docker-compose.yml - configuration for running Jekyll locally with Docker
 Gemfile - used by jekyll/GitHub pages
 LICENSE - Course-in-a-Box is licensed under the MIT License (do not edit)
 README.md - a text file to introduce and explain the project
