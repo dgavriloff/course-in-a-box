@@ -20,7 +20,7 @@ Before you begin, ensure you have one of the following installed:
 - Docker Compose (usually included with Docker Desktop)
 
 ### Option 2: Local Ruby Installation
-- Ruby 2.7 or higher (Ruby 3.x recommended)
+- Ruby 2.7 or higher (Ruby 3.3 recommended to match the Docker environment)
 - Bundler gem (`gem install bundler`)
 - Git
 
@@ -32,9 +32,11 @@ Docker is the easiest way to get started as it handles all dependencies automati
 
 1. **Clone the repository** (if you haven't already):
    ```bash
-   git clone https://github.com/your-username/course-in-a-box.git
+   git clone https://github.com/p2pu/course-in-a-box.git
    cd course-in-a-box
    ```
+   
+   Note: If you're working with a fork, replace `p2pu` with your GitHub username.
 
 2. **Start the development server**:
    ```bash
@@ -183,10 +185,12 @@ bundle exec jekyll serve --port 4001
 
 ### Permission Errors with Docker
 
-If you encounter permission errors with Docker, ensure the user ID matches:
+If you encounter permission errors with Docker volumes, you can run the Jekyll service directly:
 ```bash
-docker compose run --rm -u $(id -u):$(id -g) jekyll bash -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"
+docker compose run --rm jekyll bash -c "bundle install && bundle exec jekyll serve -H 0.0.0.0"
 ```
+
+The user ID is already configured in `docker-compose.yml`.
 
 ### Bundle Install Fails
 
