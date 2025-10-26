@@ -2,6 +2,11 @@
 markdown: kramdown
 permalink: /:categories/:title/
 
+# Enable MathJax for LaTeX rendering
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
 # Change this tracking code with your own tracking code
 ga_tracking_code: UA-139717412-2
 # Please leave this code here for us to see how Course in a Box get used
