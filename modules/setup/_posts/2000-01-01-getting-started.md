@@ -21,7 +21,7 @@ Optionally, if you’re comfortable setting up and working in local dev environm
 
 1. [Install Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
 2. Clone your repository to your local machine
-3. Run `docker-compose up` in the repository directory
+3. Run `docker compose up` in the repository directory
 4. View your site at [http://localhost:4000](http://localhost:4000)
 
 Alternatively, you can [install and run Jekyll directly](https://nicolas-van.github.io/bootstrap-4-github-pages#run-jekyll-on-your-computer-to-speed-up-testing) if you prefer not to use Docker.
